@@ -1,0 +1,217 @@
+/* ===== LISTINGS PAGE ===== */
+.listings-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.listings-main {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.25rem, 5vw, 3rem);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ===== FILTER TOOLBAR ===== */
+.listings-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.listings-toolbar__filters {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 30px;
+  border: 1.5px solid rgba(11, 31, 58, 0.15);
+  background: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.listings-toolbar__count {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+.listings-toolbar__count strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* ===== LISTING TESTIMONIALS ===== */
+.listing-testimonials {
+  background: var(--navy);
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  position: relative;
+  overflow: hidden;
+}
+.listing-testimonials::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(201, 169, 110, 0.1) 0%,
+    transparent 65%
+  );
+}
+.listing-testimonials .section__eyebrow {
+  color: var(--accent);
+}
+.listing-testimonials .section__title {
+  color: var(--white);
+}
+.listing-testimonials .section__sub {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.listing-testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.listing-testi-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(201, 169, 110, 0.18);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+  transition:
+    transform var(--transition),
+    background var(--transition);
+}
+.listing-testi-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.listing-testi-card__quote {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.listing-testi-card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+.listing-testi-card__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.listing-testi-card__author strong {
+  display: block;
+  color: var(--white);
+  font-size: 0.92rem;
+}
+.listing-testi-card__author span {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.listing-testi-card__stars {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1024px) {
+  .listing-testi-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+  }
+}
+
+/* Tablet 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .listings-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .listings-toolbar__filters {
+    gap: 0.6rem;
+  }
+  .filter-btn {
+    font-size: 0.88rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .listing-testi-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile 600px - 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .listings-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .listings-toolbar__filters {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    font-size: 0.82rem;
+    padding: 0.45rem 1rem;
+  }
+  .listing-testi-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* Mobile 360px - 599px */
+@media (max-width: 599px) {
+  .listings-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .listings-toolbar__filters {
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.9rem;
+  }
+  .listing-testi-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

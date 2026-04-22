@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Featured Listings – Luxi Estates</title>
+  <meta name="description" content="Browse our exclusive collection of premium real estate properties — villas, apartments, penthouses, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/listings.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">◈</span>
+        <span class="logo__text">Luxi<strong>Estates</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="listings.html" class="nav__link active">Featured Listings</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+        <a href="contact.html" class="btn btn--outline nav__cta">Contact us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow fade-up">Our Portfolio</p>
+      <h1 class="page-hero__title fade-up">Featured Listings</h1>
+      <p class="page-hero__sub fade-up">Browse our exclusive collection of premium homes and investments</p>
+    </div>
+  </section>
+
+  <!-- LISTINGS GRID -->
+  <div class="listings-main">
+    <div class="listings-toolbar fade-up">
+      <div class="listings-toolbar__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sale">For Sale</button>
+        <button class="filter-btn" data-filter="rent">For Rent</button>
+      </div>
+      <p class="listings-toolbar__count"><strong id="prop-count">8</strong> properties found</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v1.jpg" class="prop-card__img" alt="Green Valley Residency" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Luxury Villa</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Luxury Villa</p>
+          <h3 class="prop-card__title">Green Valley Residency</h3>
+          <p class="prop-card__loc">◎ Whitefield, Bangalore</p>
+          <p class="prop-card__price">₹ 3.2 Cr</p>
+          <p class="prop-card__desc">A stunning luxury villa nestled in a serene green environment with world-class amenities and modern interiors.</p>
+          <div class="prop-card__meta">
+            <span>🛏 3 Beds</span><span>🚿 3 Baths</span><span>⭐ 4.5</span>
+          </div>
+          <a href="property-detail.html?id=1" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v2.webp" class="prop-card__img" alt="Skyline Heights" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Premium Apartment</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Premium Apartment</p>
+          <h3 class="prop-card__title">Skyline Heights</h3>
+          <p class="prop-card__loc">◎ Koramangala, Bangalore</p>
+          <p class="prop-card__price">₹ 2.8 Cr</p>
+          <p class="prop-card__desc">A premium high-rise apartment offering breathtaking city views and top-of-the-line facilities in a prime location.</p>
+          <div class="prop-card__meta">
+            <span>🛏 3 Beds</span><span>🚿 2 Baths</span><span>⭐ 4.7</span>
+          </div>
+          <a href="property-detail.html?id=2" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v3.webp" class="prop-card__img" alt="Elite Garden Villas" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Modern Villa</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Modern Villa</p>
+          <h3 class="prop-card__title">Elite Garden Villas</h3>
+          <p class="prop-card__loc">◎ Indiranagar, Bangalore</p>
+          <p class="prop-card__price">₹ 1.9 Cr</p>
+          <p class="prop-card__desc">Elegant garden villas with spacious interiors, landscaped gardens, and an exclusive community lifestyle.</p>
+          <div class="prop-card__meta">
+            <span>🛏 4 Beds</span><span>🚿 4 Baths</span><span>⭐ 4.5</span>
+          </div>
+          <a href="property-detail.html?id=3" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v4.webp" class="prop-card__img" alt="Royal Crest Villas" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Skyline Luxury Villa</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Skyline Luxury Villa</p>
+          <h3 class="prop-card__title">Royal Crest Villas</h3>
+          <p class="prop-card__loc">◎ Hebbal, Bangalore</p>
+          <p class="prop-card__price">₹ 5.8 Cr</p>
+          <p class="prop-card__desc">Majestic skyline villas offering panoramic views, private pools, and premium finishes for the discerning buyer.</p>
+          <div class="prop-card__meta">
+            <span>🛏 5 Beds</span><span>🚿 5 Baths</span><span>⭐ 4.6</span>
+          </div>
+          <a href="property-detail.html?id=4" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="rent">
+        <div class="prop-card__img-wrap">
+          <img src="images/v5.webp" class="prop-card__img" alt="Green Park Residences" />
+          <span class="prop-card__badge badge--rent">For Rent</span>
+          <span class="prop-card__type">Urban Premium Apartment</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Urban Premium Apartment</p>
+          <h3 class="prop-card__title">Green Park Residences</h3>
+          <p class="prop-card__loc">◎ Electronic City, Bangalore</p>
+          <p class="prop-card__price">₹ 1.2 L / month</p>
+          <p class="prop-card__desc">Premium urban apartments with lush green surroundings, modern amenities, and excellent connectivity.</p>
+          <div class="prop-card__meta">
+            <span>🛏 3 Beds</span><span>🚿 3 Baths</span><span>⭐ 4.9</span>
+          </div>
+          <a href="property-detail.html?id=5" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="rent">
+        <div class="prop-card__img-wrap">
+          <img src="images/v6.webp" class="prop-card__img" alt="Seaview Enclave" />
+          <span class="prop-card__badge badge--rent">For Rent</span>
+          <span class="prop-card__type">Beachside Luxury Villa</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Beachside Luxury Villa</p>
+          <h3 class="prop-card__title">Seaview Enclave</h3>
+          <p class="prop-card__loc">◎ Sarjapur Road, Bangalore</p>
+          <p class="prop-card__price">₹ 2.5 L / month</p>
+          <p class="prop-card__desc">Breathtaking beachside luxury villa offering serene waterfront living with private beach access and resort-style amenities.</p>
+          <div class="prop-card__meta">
+            <span>🛏 4 Beds</span><span>🚿 3 Baths</span><span>⭐ 4.6</span>
+          </div>
+          <a href="property-detail.html?id=6" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v7.avif" class="prop-card__img" alt="Metro Star Homes" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Modern City Apartment</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Modern City Apartment</p>
+          <h3 class="prop-card__title">Metro Star Homes</h3>
+          <p class="prop-card__loc">◎ MG Road, Bangalore</p>
+          <p class="prop-card__price">₹ 4.5 Cr</p>
+          <p class="prop-card__desc">Smart city apartments with cutting-edge design, premium interiors, and unmatched urban connectivity.</p>
+          <div class="prop-card__meta">
+            <span>🛏 2 Beds</span><span>🚿 2 Baths</span><span>⭐ 4.6</span>
+          </div>
+          <a href="property-detail.html?id=7" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+      <article class="prop-card fade-up" data-category="sale">
+        <div class="prop-card__img-wrap">
+          <img src="images/v8.avif" class="prop-card__img" alt="Palm Grove Villas" />
+          <span class="prop-card__badge">For Sale</span>
+          <span class="prop-card__type">Elegant Family Villa</span>
+        </div>
+        <div class="prop-card__body">
+          <p class="prop-card__sub-type">Elegant Family Villa</p>
+          <h3 class="prop-card__title">Palm Grove Villas</h3>
+          <p class="prop-card__loc">◎ JP Nagar, Bangalore</p>
+          <p class="prop-card__price">₹ 3.0 Cr</p>
+          <p class="prop-card__desc">Elegant family villas surrounded by palm groves offering a peaceful retreat with top-class community facilities.</p>
+          <div class="prop-card__meta">
+            <span>🛏 4 Beds</span><span>🚿 3 Baths</span><span>⭐ 4.8</span>
+          </div>
+          <a href="property-detail.html?id=8" class="btn btn--outline prop-card__btn">Read more</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="listing-testimonials">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Testimonials</p>
+        <h2 class="section__title">What Our Clients Say About Us</h2>
+      </div>
+      <div class="listing-testi-grid fade-up">
+        <div class="listing-testi-card">
+          <p class="listing-testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="listing-testi-card__author">
+            <div class="listing-testi-card__avatar">AK</div>
+            <div>
+              <strong>Arjun K.</strong>
+              <span>Purchased in Whitefield</span>
+            </div>
+          </div>
+          <div class="listing-testi-card__stars">★★★★★</div>
+        </div>
+        <div class="listing-testi-card">
+          <p class="listing-testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="listing-testi-card__author">
+            <div class="listing-testi-card__avatar">PM</div>
+            <div>
+              <strong>Priya M.</strong>
+              <span>Renting in Koramangala</span>
+            </div>
+          </div>
+          <div class="listing-testi-card__stars">★★★★★</div>
+        </div>
+        <div class="listing-testi-card">
+          <p class="listing-testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="listing-testi-card__author">
+            <div class="listing-testi-card__avatar">RS</div>
+            <div>
+              <strong>Ravi S.</strong>
+              <span>Sold in Indiranagar</span>
+            </div>
+          </div>
+          <div class="listing-testi-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__icon">◈</span>
+          <span class="logo__text">Luxi<strong>Estates</strong></span>
+        </a>
+        <p>Your trusted partner in finding the perfect property. Quality, trust, and excellence — always.</p>
+        <p class="footer__newsletter-label">Subscribe to Our Newsletter</p>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="listings.html">Featured Listings</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Our Services</h5>
+        <a href="contact.html">Buying</a>
+        <a href="contact.html">Selling</a>
+        <a href="contact.html">Management</a>
+        <a href="contact.html">Investment</a>
+      </div>
+      <div class="footer__col">
+        <h5>Legal</h5>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Luxi Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/listings.js"></script>
+</body>
+</html>

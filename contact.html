@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Luxi Estates</title>
+  <meta name="description" content="Get in touch with Luxi Estates. We're here to help you find your perfect property — contact us for enquiries, site visits, or personalized assistance." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">◈</span>
+        <span class="logo__text">Luxi<strong>Estates</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="listings.html" class="nav__link">Featured Listings</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="contact.html" class="nav__link active">Contact Us</a>
+        <a href="contact.html" class="btn btn--outline nav__cta">Contact us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow fade-up">Get in Touch</p>
+      <h1 class="page-hero__title fade-up">Contact Us</h1>
+      <p class="page-hero__sub fade-up">We're here to help you find your perfect property. Get in touch with our expert team for enquiries, site visits, pricing details, or personalized assistance. We'll respond quickly and guide you at every step of your real estate journey.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="container contact-layout">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info fade-up">
+        <h3>We're Here to Help You</h3>
+        <p>Whether you are looking to buy, sell, or invest in a property, our dedicated team is ready to assist you with complete transparency and guidance. We ensure a smooth and hassle-free experience from the first inquiry to final possession.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📞</div>
+          <div>
+            <strong>Phone Number</strong>
+            <p>Phone : +91 98765 43210<br />Fax : +91 80 4567 8901</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>42, MG Road, Brigade Gateway,<br />Bangalore – 560001, Karnataka</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail__icon">✉️</div>
+          <div>
+            <strong>Email Address</strong>
+            <p>hello@luxiestates.in<br />support@luxiestates.in</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail__icon">🕐</div>
+          <div>
+            <strong>Office Hours</strong>
+            <p>Mon – Sat: 9:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 4:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">LI</a>
+          <a href="#" class="social-link">TW</a>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap fade-up">
+        <form class="contact-form" id="contactForm" onsubmit="handleContactForm(event)">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Arjun" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Kumar" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="arjun@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest">
+              <option>Buying a Property</option>
+              <option>Selling a Property</option>
+              <option>Renting a Property</option>
+              <option>Property Valuation</option>
+              <option>Investment Advice</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget Range</label>
+            <select id="budget">
+              <option>Select Budget</option>
+              <option>Under ₹50 Lakhs</option>
+              <option>₹50L – ₹1 Crore</option>
+              <option>₹1Cr – ₹3 Crore</option>
+              <option>₹3Cr – ₹5 Crore</option>
+              <option>Above ₹5 Crore</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about the property you're looking for..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">Send Message</button>
+          <p class="form-privacy">🔒 Your information is safe with us. We never share your data.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="form-success__icon">✓</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will get back to you within 2 hours.</p>
+          <a href="listings.html" class="btn btn--primary" style="margin-top:1.5rem">Browse Listings</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__icon">◈</span>
+          <span class="logo__text">Luxi<strong>Estates</strong></span>
+        </a>
+        <p>Your trusted partner in finding the perfect property. Quality, trust, and excellence — always.</p>
+        <p class="footer__newsletter-label">Subscribe to Our Newsletter</p>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="listings.html">Featured Listings</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Our Services</h5>
+        <a href="contact.html">Buying</a>
+        <a href="contact.html">Selling</a>
+        <a href="contact.html">Management</a>
+        <a href="contact.html">Investment</a>
+      </div>
+      <div class="footer__col">
+        <h5>Legal</h5>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Luxi Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

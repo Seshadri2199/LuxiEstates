@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Details – Luxi Estates</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/property-detail.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">◈</span>
+        <span class="logo__text">Luxi<strong>Estates</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="listings.html" class="nav__link">Featured Listings</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+        <a href="contact.html" class="btn btn--outline nav__cta">Contact us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow fade-up" id="prop-type-hero">Property Detail</p>
+      <h1 class="page-hero__title fade-up" id="prop-title-hero">Loading Property...</h1>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="property-main container">
+    <div class="property-grid">
+      <!-- LEFT: DETAILS -->
+      <div class="property-details fade-up">
+        <div class="property-gallery">
+          <img id="main-img" src="" alt="Property" class="gallery-main" />
+          <div class="gallery-thumbs" id="thumb-container">
+            <!-- Thumbs added via JS -->
+          </div>
+        </div>
+
+        <div class="property-info">
+          <div class="info-header">
+            <div>
+              <span class="info-badge" id="prop-badge">For Sale</span>
+              <h2 id="prop-title">Property Name</h2>
+              <p class="info-loc" id="prop-loc">◎ Location</p>
+            </div>
+            <div class="info-price" id="prop-price">₹ 0.0 Cr</div>
+          </div>
+
+          <div class="info-meta">
+            <div class="meta-item"><span>🛏</span> <strong id="prop-beds">0</strong> Beds</div>
+            <div class="meta-item"><span>🚿</span> <strong id="prop-baths">0</strong> Baths</div>
+            <div class="meta-item"><span>📐</span> <strong id="prop-area">0 sq ft</strong> Area</div>
+            <div class="meta-item"><span>⭐</span> <strong id="prop-rating">0.0</strong> Rating</div>
+          </div>
+
+          <div class="info-desc">
+            <h3>Description</h3>
+            <p id="prop-desc">Loading description...</p>
+          </div>
+
+          <div class="info-amenities">
+            <h3>Amenities</h3>
+            <ul id="amenities-list">
+              <!-- List added via JS -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: ENQUIRY -->
+      <aside class="property-sidebar fade-up">
+        <div class="enquiry-card">
+          <h3>Enquire About This Property</h3>
+          <p>Interested in this home? Send us a message and our experts will get back to you within 24 hours.</p>
+          <form class="enquiry-form" onsubmit="handleEnquiry(event)">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 00000 00000" required />
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea placeholder="I'm interested in this property..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+          <div id="enquiry-success" class="success-msg" style="display: none;">
+            Thank you! Your enquiry has been sent successfully.
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- RELATED PROPERTIES -->
+  <section class="section related-props">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Explore More</p>
+        <h2 class="section__title">Related Properties</h2>
+      </div>
+      <div class="cards-grid" id="related-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__icon">◈</span>
+          <span class="logo__text">Luxi<strong>Estates</strong></span>
+        </a>
+        <p>Your trusted partner in finding the perfect property. Quality, trust, and excellence — always.</p>
+        <p class="footer__newsletter-label">Subscribe to Our Newsletter</p>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="listings.html">Featured Listings</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Our Services</h5>
+        <a href="contact.html">Buying</a>
+        <a href="contact.html">Selling</a>
+        <a href="contact.html">Management</a>
+        <a href="contact.html">Investment</a>
+      </div>
+      <div class="footer__col">
+        <h5>Legal</h5>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Luxi Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/properties.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/property-detail.js"></script>
+</body>
+</html>

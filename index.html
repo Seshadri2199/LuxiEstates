@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxi Estates – Find Your Dream Home</title>
+  <meta name="description" content="Discover premium real estate properties with Luxi Estates. Expert guidance for buying, selling, and investing in luxury homes." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">◈</span>
+        <span class="logo__text">Luxi<strong>Estates</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="listings.html" class="nav__link">Featured Listings</a>
+        <a href="about.html" class="nav__link">About Us</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+        <a href="contact.html" class="btn btn--outline nav__cta">Contact us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="home">
+    <div class="homebg"></div>
+    <div class="container homecontent">
+      <p class="home__eyebrow">Premium Real Estate</p>
+      <h1 class="home__title">Find the Home<br><em>You Deserve</em></h1>
+      <p class="home__sub">From finding the right home to securing the best deal, we guide you every step of the way with trust and expertise.</p>
+      <div class="home__actions">
+        <a href="listings.html" class="btn btn--primary">View Listings</a>
+        <a href="about.html" class="btn btn--ghost">How It Works</a>
+      </div>
+    </div>
+    <div class="home__search">
+      <div class="container">
+        <form class="search-bar" onsubmit="handleSearch(event)">
+          <div class="search-bar__group">
+            <label>Location</label>
+            <input type="text" placeholder="City, neighborhood..." />
+          </div>
+          <div class="search-bar__group">
+            <label>Property Type</label>
+            <select>
+              <option>All Types</option>
+              <option>Villa</option>
+              <option>Apartment</option>
+              <option>Penthouse</option>
+              <option>Townhouse</option>
+            </select>
+          </div>
+          <div class="search-bar__group">
+            <label>Price Range</label>
+            <select>
+              <option>Any Price</option>
+              <option>Under ₹50L</option>
+              <option>₹50L – ₹1Cr</option>
+              <option>₹1Cr – ₹3Cr</option>
+              <option>Above ₹3Cr</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary search-bar__btn">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="500">0</span><span class="stat-card__suffix">+</span>
+        <p>Homes Listed</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="200">0</span><span class="stat-card__suffix">+</span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="15">0</span><span class="stat-card__suffix">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-card__num" data-target="98">0</span><span class="stat-card__suffix">%</span>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">What We Offer</p>
+        <h2 class="section__title">Our Services</h2>
+        <p class="section__sub">Comprehensive real estate solutions tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-card__icon">🏡</div>
+          <h3>Property Buying</h3>
+          <p>We help you discover premium homes and smart investment opportunities in prime locations. With deep market knowledge, every step is smooth and secure.</p>
+          <a href="listings.html" class="btn btn--outline">Learn More</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-card__icon">🔑</div>
+          <h3>Property Selling</h3>
+          <p>Get the best market value for your property with our expert marketing strategy and extensive buyer network. Sell faster, earn more.</p>
+          <a href="contact.html" class="btn btn--outline">Learn More</a>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-card__icon">📈</div>
+          <h3>Investment</h3>
+          <p>Make informed investment decisions with real-time market data and expert guidance. We identify high-yield opportunities for long-term growth.</p>
+          <a href="contact.html" class="btn btn--outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-us">
+    <div class="container why-us__inner">
+      <div class="why-us__text fade-up">
+        <p class="section__eyebrow">Why Choose Us</p>
+        <h2 class="section__title">Great Potential for<br>Growth and Investment</h2>
+        <p>This property is located in a fast-developing area with excellent growth potential and rising demand. Upcoming infrastructure projects and improved connectivity add strong value to this location.</p>
+        <p>The surrounding area offers access to essential facilities like schools, hospitals, and transport hubs. Continuous development makes it a smart choice for future-focused buyers.</p>
+        <ul class="why-us__bullets">
+          <li>Fast-Growing Location</li>
+          <li>Excellent Connectivity</li>
+          <li>High Investment Value</li>
+        </ul>
+        <a href="about.html" class="btn btn--primary">Learn More</a>
+      </div>
+      <div class="why-us__features fade-up">
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Trusted Experts</h4>
+            <p>Our experienced team provides guidance to help you choose the right property with confidence.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Proven Experience</h4>
+            <p>With strong market knowledge, we offer the best options that match your needs and budget.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Guaranteed Satisfaction</h4>
+            <p>We ensure a smooth process with support, making your real estate experience easy and successful.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED LISTINGS -->
+  <section class="section featured">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Exclusive</p>
+        <h2 class="section__title">Exclusive Listings</h2>
+        <p class="section__sub">Curated selections from our finest properties</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/v1.jpg" class="prop-card__img" alt="Green Valley Residency">
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Luxury Villa</span>
+          </div>
+          <div class="prop-card__body">
+            <p class="prop-card__sub-type">Luxury Villa</p>
+            <h3 class="prop-card__title">Green Valley Residency</h3>
+            <p class="prop-card__loc">◎ Whitefield, Bangalore</p>
+            <p class="prop-card__price">₹ 3.2 Cr</p>
+            <p class="prop-card__desc">A stunning luxury villa nestled in a serene green environment with world-class amenities and modern interiors.</p>
+            <div class="prop-card__meta">
+              <span>🛏 3 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>⭐ 4.5</span>
+            </div>
+            <a href="property-detail.html?id=1" class="btn btn--outline prop-card__btn">Read more</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/v2.webp" class="prop-card__img" alt="Skyline Heights">
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Premium Apartment</span>
+          </div>
+          <div class="prop-card__body">
+            <p class="prop-card__sub-type">Premium Apartment</p>
+            <h3 class="prop-card__title">Skyline Heights</h3>
+            <p class="prop-card__loc">◎ Koramangala, Bangalore</p>
+            <p class="prop-card__price">₹ 2.8 Cr</p>
+            <p class="prop-card__desc">A premium high-rise apartment offering breathtaking city views and top-of-the-line facilities in a prime location.</p>
+            <div class="prop-card__meta">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>⭐ 4.7</span>
+            </div>
+            <a href="property-detail.html?id=2" class="btn btn--outline prop-card__btn">Read more</a>
+          </div>
+        </article>
+
+        <article class="prop-card fade-up">
+          <div class="prop-card__img-wrap">
+            <img src="images/v3.webp" class="prop-card__img" alt="Elite Garden Villas">
+            <span class="prop-card__badge">For Sale</span>
+            <span class="prop-card__type">Modern Villa</span>
+          </div>
+          <div class="prop-card__body">
+            <p class="prop-card__sub-type">Modern Villa</p>
+            <h3 class="prop-card__title">Elite Garden Villas</h3>
+            <p class="prop-card__loc">◎ Indiranagar, Bangalore</p>
+            <p class="prop-card__price">₹ 1.9 Cr</p>
+            <p class="prop-card__desc">Elegant garden villas with spacious interiors, landscaped gardens, and an exclusive community lifestyle.</p>
+            <div class="prop-card__meta">
+              <span>🛏 4 Beds</span>
+              <span>🚿 4 Baths</span>
+              <span>⭐ 4.5</span>
+            </div>
+            <a href="property-detail.html?id=3" class="btn btn--outline prop-card__btn">Read more</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="section__cta fade-up">
+        <a href="listings.html" class="btn btn--primary">View All Listings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section team">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Our Leadership</p>
+        <h2 class="section__title">Meet Our Team</h2>
+        <p class="section__sub">Find your dream home with lifetime support on every step</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card fade-up">
+          <div class="team-card__avatar">JC</div>
+          <h4>Jane Cooper</h4>
+          <p class="team-card__role">CEO</p>
+          <p class="team-card__bio">Jane leads Luxi Estates with a passion for client success and a vision for making real estate transparent and accessible for everyone.</p>
+        </div>
+        <div class="team-card fade-up">
+          <div class="team-card__avatar">MS</div>
+          <h4>Martin Scorsese</h4>
+          <p class="team-card__role">Founder</p>
+          <p class="team-card__bio">Martin founded Luxi with a single mission: to simplify property buying and deliver exceptional value to every client.</p>
+        </div>
+        <div class="team-card fade-up">
+          <div class="team-card__avatar">DT</div>
+          <h4>deGrass Tyson</h4>
+          <p class="team-card__role">Manager</p>
+          <p class="team-card__bio">Tyson manages day-to-day operations and ensures every client receives personalized, stress-free guidance throughout their journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__header fade-up">
+        <p class="section__eyebrow">Testimonials</p>
+        <h2 class="section__title">What Our Clients Say About Us</h2>
+      </div>
+      <div class="testi-grid fade-up">
+        <div class="testi-card">
+          <p class="testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">AK</div>
+            <div>
+              <strong>Arjun</strong>
+              <span>Purchased in Whitefield</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">PM</div>
+            <div>
+              <strong>Priya</strong>
+              <span>Renting in Koramangala</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-card__quote">"I had a great experience working with the team. They understood my needs clearly and helped me find the perfect property without any hassle."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">RS</div>
+            <div>
+              <strong>Ravi</strong>
+              <span>Sold in Indiranagar</span>
+            </div>
+          </div>
+          <div class="testi-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner fade-up">
+    <div class="container cta-banner__inner">
+      <div>
+        <h2>Discover spaces designed for better living and smarter investments.</h2>
+        <p>Let us help you secure a place that truly feels like home.</p>
+      </div>
+      <a href="listings.html" class="btn btn--primary">VIEW LISTINGS</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__icon">◈</span>
+          <span class="logo__text">Luxi<strong>Estates</strong></span>
+        </a>
+        <p>We help you discover premium homes and smart investment opportunities in prime locations with trust and expertise.</p>
+        <p class="footer__newsletter-label">Subscribe to Our Newsletter</p>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="listings.html">Featured Listings</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Our Services</h5>
+        <a href="contact.html">Buying</a>
+        <a href="contact.html">Selling</a>
+        <a href="contact.html">Management</a>
+        <a href="contact.html">Investment</a>
+      </div>
+      <div class="footer__col">
+        <h5>Legal</h5>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Luxi Estates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
